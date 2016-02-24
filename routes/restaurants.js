@@ -34,6 +34,12 @@ router.get('/', function(req, res, next) {
                         "main_ingredient": "닭, 핫소스",
                         "menu_photo_url": "인기사진.jpg",
                         "popular": "true"
+                    }, {
+                        "menu_name": "새우그라탕",
+                        "price": "10000",
+                        "main_ingredient": "새우, 치즈",
+                        "menu_photo_url": "null",
+                        "popular": "false"
                     }]
                 }
             }, {
@@ -64,6 +70,12 @@ router.get('/', function(req, res, next) {
                         "main_ingredient": "과자",
                         "menu_photo_url": "인기사진1.jpg",
                         "popular": "true"
+                    }, {
+                        "menu_name": "새우그라탕",
+                        "price": "10000",
+                        "main_ingredient": "새우, 치즈",
+                        "menu_photo_url": "null",
+                        "popular": "false"
                     }]
                 }
             }]

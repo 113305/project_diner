@@ -1,29 +1,30 @@
 var express = require('express');
 var router = express.Router();
+// url 같으면 get으로 동작
 
-router.post('/', function(req, res, next) {
-    if (req.secure) {
+router.route('/')
+    .post(function(req, res, next) {
+        if (req.secure) {
+            var result = {
+                "results": {
+                    "message": "회원가입이 정상적으로 처리되었습니다."
+                }
+            };
+            res.json(result);
+        } else {
+            var err = new Error('SSL/TLS Upgrades Requires');
+            err.status = 426;
+            next(err);
+        }
+    })
+    .delete(function(req, res, next) {
         var result = {
             "results": {
-                "message": "회원가입이 정상적으로 처리되었습니다."
+                "message": "회원탈퇴가 정상적으로 처리되었습니다."
             }
         };
         res.json(result);
-    } else {
-        var err = new Error('SSL/TLS Upgrades Requires');
-        err.status = 426;
-        next(err);
-    }
-});
-
-router.delete('/', function(req, res, next) {
-    var result = {
-        "results": {
-            "message": "회원탈퇴가 정상적으로 처리되었습니다."
-        }
-    };
-    res.json(result);
-});
+    });
 
 router.route('/me')
     .get(function(req, res, next) {
@@ -79,6 +80,4 @@ router.route('/me')
     });
 
 module.exports = router;
-
-
 

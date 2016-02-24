@@ -48,40 +48,53 @@ router.get('/:regionId', function(req, res, next) {
                         "menu_photo_url": "인기사진.jpg",
                         "popular": "true"
                     }, {
-                        "list_restaurant": {
-                            "restaurant_name": "다이너 식당",
-                            "restaurant_photo_url": "사진1.jpg",
-                            "dong_info": "낙성대",
-                            "restaurant_class": "학식 전문점"
-                        },
-                        "detail_restaurant": {
-                            "restaurant_name": "다이너 식당",
-                            "address": "낙성대 어딘가",
-                            "website_url": "www.google.com",
-                            "price_range": "1000~20020원",
-                            "reward_photo_url": "사진1.jpg",
-                            "reward_info": "250ml",
-                            "reward_name": "콜라",
-                            "take_out": "true",
-                            "parking": "true",
-                            "smoking": "false",
-                            "break_time": "12:00~1:00",
-                            "avg_score": "4.5",
-                            "restaurant_photo_url": ["레스토랑1.jpg", "레스토랑21.jpg"],
-                            "restaurant_info": "T아카데미의 다이너입니다.",
-                            "menu": [{
-                                "menu_name": "냠냠",
-                                "price": "2000",
-                                "main_ingredient": "과자",
-                                "menu_photo_url": "인기사진1.jpg",
-                                "popular": "true"
-                            }]
-                        }
+                        "menu_name": "새우그라탕",
+                        "price": "10000",
+                        "main_ingredient": "새우, 치즈",
+                        "menu_photo_url": "null",
+                        "popular": "false"
+                    }]
+                }
+            }, {
+                "list_restaurant": {
+                    "restaurant_name": "다이너 식당",
+                    "restaurant_photo_url": "사진1.jpg",
+                    "dong_info": "낙성대",
+                    "restaurant_class": "학식 전문점"
+                },
+                "detail_restaurant": {
+                    "restaurant_name": "다이너 식당",
+                    "address": "낙성대 어딘가",
+                    "website_url": "www.google.com",
+                    "price_range": "1000~20020원",
+                    "reward_photo_url": "사진1.jpg",
+                    "reward_info": "250ml",
+                    "reward_name": "콜라",
+                    "take_out": "true",
+                    "parking": "true",
+                    "smoking": "false",
+                    "break_time": "12:00~1:00",
+                    "avg_score": "4.5",
+                    "restaurant_photo_url": ["레스토랑1.jpg", "레스토랑21.jpg"],
+                    "restaurant_info": "T아카데미의 다이너입니다.",
+                    "menu": [{
+                        "menu_name": "냠냠",
+                        "price": "2000",
+                        "main_ingredient": "과자",
+                        "menu_photo_url": "인기사진1.jpg",
+                        "popular": "true"
+                    }, {
+                        "menu_name": "새우그라탕",
+                        "price": "10000",
+                        "main_ingredient": "새우, 치즈",
+                        "menu_photo_url": "null",
+                        "popular": "false"
                     }]
                 }
             }]
         }
     };
+
     res.json(result);
 });
 

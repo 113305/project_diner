@@ -26,6 +26,7 @@ router.route('/')
         res.json(result);
     });
 
+
 router.route('/me')
     .get(function(req, res, next) {
         if (req.secure) {

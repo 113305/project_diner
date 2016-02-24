@@ -31,11 +31,11 @@ router.post('/facebook/token', function(req, res, next) {
     }
 });
 
-router.get('/password', function(req, res, next) {
+router.post('/updatepassword', function(req, res, next) {
     if (req.secure) {
         var result = {
             "results": {
-                "message": "이메일 계정 확인이 정상적으로 처리되었습니다."
+                "message": "비밀번호 재발급이 정상적으로 처리되었습니다."
             }
         };
         res.json(result);
@@ -46,19 +46,6 @@ router.get('/password', function(req, res, next) {
     }
 });
 
-router.put('/password/:customerId', function(req, res, next) {
-    if (req.secure) {
-        var result = {
-            "results": {
-                "message": "임시 비밀번호 발급이 정상적으로 처리되었습니다."
-            }
-        };
-        res.json(result);
-    } else {
-        var err = new Error('SSL/TLS Ugrades Required');
-        err.status = 426;
-        next(err);
-    }
-});
+
 
 module.exports = router;

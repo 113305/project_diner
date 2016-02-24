@@ -55,6 +55,7 @@ router.route('/me')
                     }
                 }
             };
+
             res.json(result);
         } else {
             var err = new Error('SSL/TLS Upgrades Requires');

@@ -25,20 +25,6 @@ app.set('httpsPort', httpsPort);
  * Create HTTP server.
  */
 
-
-//C:\didimdol\nodejs_projects\webstorm\day11\bin>openssl genrsa -des3 -out site.key 1024
-//C:\didimdol\nodejs_projects\webstorm\day11\bin>openssl req -new -key site.key -out site.csr
-//C:\didimdol\nodejs_projects\webstorm\day11\bin>move site.key site.key.org
-//C:\didimdol\nodejs_projects\webstorm\day11\bin>openssl rsa -in site.key.org -outsite.key -> 암호해제된 site.key 획득
-//C:\didimdol\nodejs_projects\webstorm\day11\bin>openssl x509 -req -days 365 -in site.csr -signkey site.key -out site.crt -> site.crt 획득
-//crt, key file만 두고 나머지 file은 삭제
-//https로 사이트들어가서 자물쇠클릭 -> 인증서정보 -> 자세히 -> 파일에 복사(C:\didimdol\nodejs_projects\webstorm\day11\bin\localhost.cer)
-//chrome설정 -> ssl검색 -> 인증서관리 -> 신뢰할수있는루트인증기관 -> 가져오기 -> C:\didimdol\nodejs_projects\webstorm\day11\bin\localhost.cer
-//https://localhost -> 고급 -> 안전하지않음으로 이동 -> 성공!!.
-
-//인증서를 발급받으려먼 돈, 도메인있어야함함
-//증서안에 public key가 들어있음, 통신할때 public key를 갖고있는 사람은 나하고 안전하게 거래할 수 있다는 것
-//서버는 public key, private key가 각 하나씩 들어있는 두개의 file갖고 있어야함
 var key = fs.readFileSync(path.join(__dirname , 'site.key')).toString();
 var cert = fs.readFileSync(path.join(__dirname, 'site.crt')).toString();
 var options = {

@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
             "message": "레스토랑 검색이 정상적으로 처리되었습니다.",
             "data": [{
                 "list_restaurant": {
-                    "restaurant_name": "아워프레임",
+                    "restaurantName": "아워프레임",
                     "restaurant_photo_url": "사진.jpg",
                     "dong_info": "혜화동",
                     "restaurant_class": "새우요리 전문점"

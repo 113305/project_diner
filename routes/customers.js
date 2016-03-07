@@ -34,25 +34,41 @@ router.route('/me')
                 "results": {
                     "message": "회원 정보 조회가 정상적으로 처리되었습니다.",
                     "data": {
-                        "customer": {
-                            "customer_name": "김민선",
-                            "customer_phone": "010-111-0111",
-                            "email": "alstjs@naver.com"
+                        "profile": {
+                            "customerName": "김민선",
+                            "customerPhone": "010-111-0111",
+                            "customerEmail": "alstjs@naver.com",
+                            "showCount": "4"
                         },
                         "reservation": [{
-                            "restaurant_name": "아워프레임",
-                            "adult_number": "2",
-                            "child_number": "1",
-                            "date_time": "2016-01-01 06:00:35",
-                            "score": "NULL",
-                            "etc_request": "새우알러지있어요"
+                            "restaurantId": "1",
+                            "restaurantName": "아워프레임",
+                            "adultNumber": "2",
+                            "childNumber": "1",
+                            "dateTime": "2016-01-01 06:00:35",
+                            "etcRequest": "새우알러지있어요",
+                            "menu": [{
+                                "menuName": "닭쳐",
+                                "quantity": "1"
+                            },
+                                {
+                                    "menuName": "갈릭버터 쉬림프",
+                                    "quantity": "2"
+                                }]
                         }, {
-                            "restaurant_name": "아워프레임2",
+                            "restaurant_name": "마티아",
                             "adult_number": "2",
                             "child_number": "3",
                             "date_time": "2016-01-01 08:10:25",
-                            "score": "3",
-                            "etc_request": "맵게 해주세여"
+                            "etc_request": "맵게 해주세여",
+                            "menu": [{
+                                "menuName": "등심돈까스",
+                                "quantity": "1"
+                            },
+                                {
+                                    "menuName": "안심돈까스",
+                                    "quantity": "2"
+                                }]
                         }]
                     }
                 }
@@ -69,7 +85,7 @@ router.route('/me')
         if (req.secure) {
             var result = {
                 "results": {
-                    "message": "이름 변경이 정상적으로 처리되었습니다."
+                    "message": "회원 정보 변경이 정상적으로 처리되었습니다."
                 }
             };
             res.json(result);

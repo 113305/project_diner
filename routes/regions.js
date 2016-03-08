@@ -15,6 +15,7 @@ router.get('/', function(req, res, next) {
     res.json(result);
 });
 
+
 router.get('/:regionId', function(req, res, next) {
     var result = {
         "results": {

@@ -21,6 +21,7 @@ router.get('/', function(req, res, next) {
 });
 
 
+
 router.get('/:restaurantId', function(req, res, next) {  // 레스토랑 아이디에 맞는 레스토랑 상세정보 조회
     var result = {
         "results": {

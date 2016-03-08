@@ -24,7 +24,7 @@ router.get('/:regionId', function(req, res, next) {
                     "listRestaurant": {
                         "restaurantName": "마티아",
                         "dongInfo": "삼성동",
-                        "restaurantCalss": "수제 돈까스 전문점",
+                        "restaurantClass": "수제 돈까스 전문점",
                         "restaurantPhotoUrl": {
                             "restaurantPhotoUrl": "https://s3.ap-northeast-2.amazonaws.com/diner-img/restaurant/mattia/restaurant_photo/mattia1.jpg"
                         }

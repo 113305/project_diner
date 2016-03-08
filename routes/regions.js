@@ -33,6 +33,7 @@ router.get('/:regionId', function(req, res, next) {
                         "restaurantId": 2,
                         "restaurantName": "마티아",
                         "address": "서울특별시 강남구 삼성동 144번지",
+                        "restaurantPhone": "070-8029-3020",
                         "businessHours": "매일14:00~22:00 (수요일 휴무)",
                         "websiteUrl": "http://mattia.com",
                         "rewardPhotoUrl": "https://s3.ap-northeast-2.amazonaws.com/diner-img/restaurant/mattia/reward_photo/mattia_reward.jpg",

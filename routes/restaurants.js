@@ -19,6 +19,7 @@ router.get('/', function(req, res, next) {
                     "detailRestaurant": {
                         "restaurantName": "아워프레임",
                         "address": "서울특별시 종로구 혜화동 53-11",
+                        "restaurantPhone": "070-7737-5323",
                         "businessHours": "매일12:00~22:00 (월요일 12:00~16:00)",
                         "websiteUrl": "http://ourframe.fordining.kr/",
                         "restaurantClass": "새우요리 전문점",

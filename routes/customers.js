@@ -57,11 +57,11 @@ router.route('/me')
                                 }],
                             "photo": "https://s3.ap-northeast-2.amazonaws.com/diner-img/restaurant/ourframe/restaurant_photo/ourframe1.png"
                         }, {
-                            "restaurant_name": "마티아",
-                            "adult_number": "3",
-                            "child_number": "4",
-                            "date_time": "2017-02-25 17:40:00",
-                            "etc_request": "맵게 해주세여",
+                            "restaurantName": "마티아",
+                            "adultNumber": "3",
+                            "childNumber": "4",
+                            "dateTime": "2017-02-25 17:40:00",
+                            "etcRequest": "맵게 해주세여",
                             "menu": [{
                                 "menuName": "등심돈까스",
                                 "quantity": "2"

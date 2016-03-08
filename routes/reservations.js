@@ -16,7 +16,7 @@ router.route('/')
             "results": {
                 "message": "예약 정보 조회가 정상적으로 처리되었습니다.",
                 "data": {
-                    "reservationId": "1"
+                    "reservationId": "88"
                 }
             }
         };

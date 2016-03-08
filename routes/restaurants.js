@@ -31,7 +31,7 @@ router.get('/:restaurantId', function(req, res, next) {  // 레스토랑 아이�
             "restaurantPhone": "070-8029-3020",
             "websiteUrl": "http://mattia.com",
             "rewardPhotoUrl": "https://s3.ap-northeast-2.amazonaws.com/diner-img/restaurant/mattia/reward_photo/mattia_reward.jpg",
-            "rewardInfo": "190Kcal(2조",
+            "rewardInfo": "190Kcal(2조각)",
             "rewardName": "요거트 롤 케이크",
             "takeOut": 0,
             "parking": 0,

@@ -37,6 +37,7 @@ router.get('/:regionId', function(req, res, next) {
             "data": [
                 {
                     "listRestaurant": {
+                        "restaurantId": "2",
                         "restaurantName": "마티아",
                         "dongInfo": "삼성동",
                         "restaurantClass": "수제 돈까스 전문점",
